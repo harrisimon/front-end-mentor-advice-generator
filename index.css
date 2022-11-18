@@ -1,0 +1,15 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  hsl(218, 23%, 16%);
+    color:white;
+}
+.advice-container {
+    display: flex;
+    flex-direction: column;
+}
+#advice-card {
+    background-color: hsl(217, 19%, 24%);
+}
