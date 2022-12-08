@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script src="./index.js" defer ></script>
-  <title>Frontend Mentor | Advice generator app</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<script src="./index.js" defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<title>Frontend Mentor | Advice generator app</title>
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-
-  Advice #<!-- Advice ID goes here --><p id="number"></p>
-  <div class="advice-container">
-    <div id="advice-card">
-      <p>
-        Here's some advice for you bucko!
-      </p>
-    </div>
-  </div>
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<div id="advice-card">
+			<p id="number"></p>
+			<div class="advice-container">
+				<p id="advice">Here's some advice for you bucko!</p>
+			</div>
+			<img class="divider"src="./images/pattern-divider-desktop.svg" alt="divider" />
+		</div>
+		<div class="circle">
+			<img  id="dice" src="./images/icon-dice.svg" />
+		</div>
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+	</body>
 </html>
