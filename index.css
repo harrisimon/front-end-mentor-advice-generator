@@ -7,6 +7,18 @@ body {
     font-family: 'Manrope', sans-serif;
     /* transform: translate(0, 50%);  */
 }
+#advice-card {
+    display: flex;
+    flex-direction: column;
+	background-color: hsl(217, 19%, 24%);
+    text-align: center;
+    border-radius: 12px;
+    justify-content: center;
+    height: 30%; 
+    width: 60%;
+    transform: translate(0, 50%); 
+}
+
 .advice-container {
 	display: flex;
 	flex-direction: column;
@@ -21,20 +33,11 @@ body {
     align-items: center;
     font-weight: bolder; 
 }
-#advice-card {
-    display: flex;
-    flex-direction: column;
-	background-color: hsl(217, 19%, 24%);
-    text-align: center;
-    border-radius: 12px;
-    justify-content: center;
-    height: 30%; 
-    width: 60%;
-    transform: translate(0, 50%); 
-}
+
 .divider {
-    width: 80%;
+    width: 90%;
     margin:  0 auto;
+    content: url('./images/pattern-divider-desktop.svg')
 }
 #advice{
     font-weight: bold;
@@ -52,12 +55,10 @@ body {
 }
 #dice {
     position: relative;
-    /* transform: translate(-50%, -50%);  */
     height: 60px;
 	z-index: 3;
     left: 0px;
-    top: 30px;
-    
+    top: 30px; 
 }
 @keyframes spin {
     0% {
@@ -83,3 +84,39 @@ body {
     text-transform: full-width;
     font-weight: 800;
 }
+@media only screen and (max-width: 600px) {
+
+    .divider {
+        /* width: 80%; */
+        /* margin:  0 auto; */
+        content: url('./images/pattern-divider-mobile.svg')
+    }
+    #advice-card {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(217, 19%, 24%);
+        text-align: center;
+        border-radius: 12px;
+        justify-content: center;
+        height: 30%; 
+        width: 90%;
+        transform: translate(0, 20%); 
+    }
+    .circle {
+        position: relative;
+        z-index: 2;
+        border-radius: 180px;
+        height: 100px;
+        width: 100px;
+        background-color: hsl(150, 100%, 66%);
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    #dice {
+        position: relative;
+        height: 50px;
+        z-index: 3;
+        left: 0px;
+        top: 25px; 
+    }
+  }
