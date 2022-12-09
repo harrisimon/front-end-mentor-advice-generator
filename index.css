@@ -71,7 +71,7 @@ body {
     }
 }
 #dice:hover {
-    animation: spin 1s infinite;
+    animation: spin 1s;
     box-shadow: 0px 0px 40px 20px hsl(150, 100%, 66%);
 }
 .attribution {
