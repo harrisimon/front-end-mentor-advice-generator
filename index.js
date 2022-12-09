@@ -19,7 +19,7 @@ async function buildCard() {
     let number = document.getElementById('number')
     number.innerText = `ADVICE #${advice.id}`
     console.log("advice",placeholder)
-    placeholder.innerText = advice.advice
+    placeholder.innerText = `"${advice.advice}"`
     let dice = document.getElementById('dice')
     // dice.style.transform = 'rotate(360deg)'
 
